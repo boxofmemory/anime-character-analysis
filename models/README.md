@@ -26,7 +26,7 @@ through the training UI or by hand plus a registry edit.
 
 ## Getting the weights
 
-Download them from the [latest release](../../releases/latest), or train them yourself (see
+Download them from the [latest release](../../../releases/latest), or train them yourself (see
 [`research/training/README.md`](../research/training/README.md)), or supply your own checkpoints. Usage
 terms are in [`NOTICE.md`](../NOTICE.md). The only hard requirements are:
 
