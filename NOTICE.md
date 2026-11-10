@@ -12,17 +12,20 @@ service.
 
 ## Training data
 
-- The detector was fine-tuned on `anime-face.v5i.yolov8`, a publicly hosted anime face dataset.
-- The embedder was trained on an anime character image collection built from public sources,
-  including Danbooru via its public API.
+- **Detector** — fine-tuned on `anime-face.v5i.yolov8`, a publicly hosted anime face dataset
+  (12,144 / 1,233 / 622 images for train / validation / test).
+- **Embedder** — trained on `anime_cnn_kaggle`: 9,737 images across 130 anime character classes,
+  split 0.8 / 0.2 per class.
 
 The images in those datasets are **not** distributed by this project, in any form. Copyright in
 anime frames, character designs and illustrations belongs to the respective animation studios,
 licensors and artists. This project claims no rights over that material, and the MIT licence in this
 repository does not extend to it.
 
-If you use the dataset-building scripts in `research/dataset`, you are responsible for complying with
-the terms of service of every source you download from, and with the rights of the original authors.
+Some historical scripts under `research/dataset` download images from third-party image boards. They
+read credentials from the environment and ship with none. If you use them, you are responsible for
+complying with the terms of service of every source you download from, and with the rights of the
+original authors.
 
 ## Model behaviour
 

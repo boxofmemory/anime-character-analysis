@@ -89,7 +89,7 @@ Dataset `anime-face.v5i.yolov8`: 12,144 train / 1,233 val / 622 test, 640×640 i
 
 ### Recognition — ResNet50 + ArcFace
 
-130 character classes, 9,737 images, 0.8 stratified split, 512-d embedding.
+`anime_cnn_kaggle`: 130 character classes, 9,737 images, 0.8 stratified split, 512-d embedding.
 
 | Version | Val accuracy | Prototype Top-1 | Prototype Top-5 |
 | --- | --- | --- | --- |
@@ -268,9 +268,9 @@ Interactive docs are served at `/docs` by FastAPI.
   `docs/assets/` show the running tool and are illustrative only.
 - Model weights are released for **research and educational use**; see [`NOTICE.md`](NOTICE.md).
   The MIT licence covers this code, not any anime work you feed into it.
-- The scripts under `research/dataset` fetch images from Danbooru through its public API. They read
-  credentials from the environment and ship with none. If you use them, you are responsible for
-  complying with Danbooru's terms of service and with the rights of the original artists.
+- Some historical scripts under `research/dataset` download images from third-party image boards.
+  They read credentials from the environment and ship with none. If you use them, you are responsible
+  for complying with those sites' terms of service and with the rights of the original artists.
 
 ---
 
