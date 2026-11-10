@@ -1,0 +1,66 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Node / Vite ----
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ---- Environment ----
+.env
+.env.*
+!.env.example
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Model weights (not redistributed) ----
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+*.ckpt
+*.safetensors
+!models/**/README.md
+
+# ---- Runtime data ----
+data/inputs/videos/*
+data/inputs/sample_videos/*
+!data/inputs/**/.gitkeep
+data/libraries/**
+data/outputs/**
+data/mysql/**
+!data/**/README.md
+
+# ---- Research artefacts ----
+research/**/experiments/
+research/**/__pycache__/
+research/dataset/*.csv
+research/dataset/*.json
+research/dataset/*.pt
+research/dataset/*.png
+research/training/weights/*
+!research/**/README.md
+
+# ---- Logs / scratch ----
+*.log
+tmp/
+output/

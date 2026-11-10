@@ -1,0 +1,8 @@
+experiment_name: inference_demo_formal
+input_video: ../../datasets/inference_demo/demo.mp4
+detector_model: ../../../../models/production/detection/yolov8s_anime.pt
+recognition_model: ../../../../models/production/recognition/resnet50_anime_arcface_v2.pth
+tracker_yaml: ../../../../models/production/tracking/bytetrack_anime.yaml
+known_db_path: ../../../../data/libraries/known_faces/known_database.json
+output_video_name: annotated_demo.webm
+timeline_name: timeline_demo.json

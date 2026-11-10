@@ -1,0 +1,14 @@
+experiment_name: arcface_r4_demo_formal
+dataset_dir: F:/arcface_dataset_112x112
+input_size: 224
+batch_size: 16
+epochs: 70
+embedding_size: 512
+train_ratio: 0.8
+min_images_per_class: 10
+seed: 42
+num_workers: 0
+scale: 30.0
+margin: 0.35
+weight_decay: 0.0005
+early_stop_patience: 18

@@ -1,0 +1,26 @@
+production:
+  detection:
+    - name: yolov8s_anime
+      path: models/production/detection/yolov8s_anime.pt
+      role: anime face detection
+      used_by: apps/api
+      status: active
+  recognition:
+    - name: resnet50_anime_arcface_v2
+      path: models/production/recognition/resnet50_anime_arcface_v2.pth
+      role: face embedding extraction
+      used_by: apps/api
+      status: active
+  tracking:
+    - name: bytetrack_anime
+      path: models/production/tracking/bytetrack_anime.yaml
+      role: video tracking configuration
+      used_by: apps/api
+      status: active
+archive:
+  recognition:
+    - name: resnet50_anime_arcface_v1
+      path: models/archive/recognition/resnet50_anime_arcface.pth
+      role: historical baseline
+      used_by: research/training
+      status: archived

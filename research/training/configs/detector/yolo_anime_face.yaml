@@ -1,0 +1,11 @@
+experiment_name: yolo_anime_face_formal
+dataset_yaml: ../../datasets/yolo/anime-face/data.yaml
+weights_dir: ../../weights/detection
+output_dir: ../../experiments/detection
+base_model: ../../weights/detection/yolov8s_anime.pt
+imgsz: 640
+epochs: 120
+batch: 16
+device: 0
+patience: 20
+workers: 0

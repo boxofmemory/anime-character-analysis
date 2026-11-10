@@ -1,0 +1,13 @@
+# anime_bytetrack_recommend.yaml
+tracker_type: bytetrack
+
+track_high_thresh: 0.25    # 稍微高于0.2，减少极端噪声
+track_low_thresh: 0.1      # ByteTrack 精髓，强烈建议保留
+
+new_track_thresh: 0.25     # 保证新角色能尽早建 ID
+
+match_thresh: 0.8          # 动漫 IoU 抖动较大，不宜过严 ,不行就调成0.75
+
+track_buffer: 60           # 2秒记忆，适配静止画面
+
+fuse_score: True

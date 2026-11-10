@@ -1,0 +1,9 @@
+experiment_name: bytetrack_eval_formal
+videos_dir: ../../datasets/tracker_eval/videos
+video_glob: "*.mp4"
+max_videos: 3
+detector_model: ../../weights/detection/yolov8s_anime.pt
+tracker_configs:
+  - ../../configs/tracker/bytetrack_anime.yaml
+confidence: 0.15
+iou: 0.6

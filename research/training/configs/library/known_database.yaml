@@ -1,0 +1,4 @@
+experiment_name: known_database_formal
+dataset_dir: ../../datasets/arcface_dataset_112x112
+recognition_model: ../../../../models/production/recognition/resnet50_anime_arcface_v2.pth
+output_name: known_database.json
